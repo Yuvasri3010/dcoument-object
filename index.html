@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Program</title>
+</head>
+<body>
+    <P><CENTER>WELCOME TO MY TASK</CENTER></P>
+    <a href ="https://guvi.in"id = "GUVI">Click me</a>
+    
+    <p id="existingElementId">This is an Existing Paragraph in Document Object</p>
+    <script>
+        const headElem = document.createElement("h1");
+headElem.textContent ="DOCUMENT OBJECT"
+
+document.body.append(headElem);
+
+document.body.style.backgroundColor = "violet"
+const existingElement = document.getElementById("existingElementId");
+if(existingElement)
+{
+    existingElement.style.backgroundColor = "cyan";
+    existingElement.style.color = "red";   
+}
+    </script>
+</body>
+</html>
